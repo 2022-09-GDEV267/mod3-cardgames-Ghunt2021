@@ -135,7 +135,7 @@ public class Prospector : MonoBehaviour {
 
 			cp.state = eCardState.tableau;
 
-
+			cp.SetSortingLayerName(tSD.layerName); // Set the sorting layers
 
 
 
