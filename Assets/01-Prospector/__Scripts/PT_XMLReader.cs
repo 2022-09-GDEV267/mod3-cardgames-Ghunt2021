@@ -51,6 +51,8 @@ public class PT_XMLReader {
 	// This function will parse a possible series of tags
 	void Parse(string eS, PT_XMLHashtable eH) {
 		eS = eS.Trim();
+        // Replace any tabs with spaces
+        eS = eS.Replace('\t',' ');
 		while(eS.Length > 0) {
 			eS = ParseTag(eS, eH);
 			eS = eS.Trim();
