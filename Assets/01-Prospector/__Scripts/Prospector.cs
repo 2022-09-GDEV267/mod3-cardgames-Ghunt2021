@@ -12,7 +12,7 @@ public class Prospector : MonoBehaviour {
 	[Header("Set in Inspector")]
 	public TextAsset deckXML;
 
-	public TextAsset layoutXML;
+	public TextAsset PyramidLayoutXML; //Replace with layoutXML if needed
 
 	public float xOffset = 3;
 
@@ -32,9 +32,11 @@ public class Prospector : MonoBehaviour {
 	[Header("Set Dynamically")]
 	public Deck	deck;
 
-	public Layout layout;
+	//public Layout layout;
 
-	public List<CardProspector> drawPile;
+    public Layout layout;
+
+    public List<CardProspector> drawPile;
 
 	public Transform layoutAnchor;
 
@@ -74,9 +76,9 @@ public class Prospector : MonoBehaviour {
 
 		layout = GetComponent<Layout>();  // Get the Layout component
 
-		layout.ReadLayout(layoutXML.text); // Pass LayoutXML to it
+		layout.ReadLayout(PyramidLayoutXML.text); // Pass LayoutXML to it   //Replace with layoutXML if needed
 
-		drawPile = ConvertListCardsToListCardProspectors(deck.cards);
+        drawPile = ConvertListCardsToListCardProspectors(deck.cards);
 
 		LayoutGame();
 	}
