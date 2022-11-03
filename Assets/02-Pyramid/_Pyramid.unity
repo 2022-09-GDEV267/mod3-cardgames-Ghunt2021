@@ -370,7 +370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550308463}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 1798}
+  m_LocalPosition: {x: 0, y: 0, z: -20}
   m_LocalScale: {x: 500, y: 1, z: 500}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -389,9 +389,9 @@ GameObject:
   - component: {fileID: 827460512}
   - component: {fileID: 827460510}
   - component: {fileID: 827460509}
-  - component: {fileID: 827460515}
   - component: {fileID: 827460514}
   - component: {fileID: 827460516}
+  - component: {fileID: 827460517}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -425,7 +425,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 0.044025127, g: 0.26415092, b: 0.070469275, a: 0.019607844}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -442,7 +442,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 100
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -503,28 +503,29 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ee100e0d0a1c04759a5a7537cf5e8752, type: 3}
   - {fileID: 21300000, guid: ef50d4f09a2b3425fbbdb8ad5f8957b0, type: 3}
   rankSprites:
-  - {fileID: 21300002, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300004, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300006, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300008, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300010, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300012, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300014, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300016, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300018, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300020, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300022, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300024, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300026, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300028, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300030, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  - {fileID: 21300032, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: -425995913362149430, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: 2304412477376101311, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: 4939210158302793225, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: 2998490070800472007, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: -4479338341004084719, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: -5997517502634537899, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: 1671874023668392819, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: -2772083927121017137, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: -2642023953887716003, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: 1691466138856397902, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: 5949368682610106806, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: 1108870331674003538, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: 5059402756318148790, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: -2704611688130657760, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: -6329860329445972959, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
+  - {fileID: 8997811152243715195, guid: 27e1ff3c41a74d041ab9a118dfba649e, type: 3}
   cardBack: {fileID: 21300000, guid: a8185ed8d47594bb8a3b8e2d9233f769, type: 3}
   cardBackGold: {fileID: 21300000, guid: 8ecf4828943064b3a96f6258b54c0f11, type: 3}
   cardFront: {fileID: 21300000, guid: 873a7658b7ec742228520c7b15510f4d, type: 3}
   cardFrontGold: {fileID: 21300000, guid: 944dc539459fe4109b973bd4c97f68ee, type: 3}
-  prefabSprite: {fileID: 100000, guid: 12a0355f16a4e3040b7c1daff1c8ed35, type: 3}
-  prefabCard: {fileID: 100000, guid: ee93767be21efa14eaa16db1093e90b5, type: 3}
+  prefabSprite: {fileID: 1000014090761352, guid: 30a6ba41f0d264815a76b64a60ee0b62,
+    type: 3}
+  prefabCard: {fileID: 100000, guid: a5c90d02169ebf142adb9366c8f1939a, type: 3}
   xmlr:
     xmlText: 
   cardNames: []
@@ -532,35 +533,6 @@ MonoBehaviour:
   decorators: []
   cardDefs: []
   deckAnchor: {fileID: 0}
---- !u!114 &827460515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827460508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d7d9d9d58522f4cb96693ace07ad24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deckXML: {fileID: 4900000, guid: c76312a0fb08948699e1abf935e4a957, type: 3}
-  layoutXML: {fileID: 4900000, guid: ac3fbe691841a40439caafba91a7f547, type: 3}
-  xOffset: 3
-  yOffset: -2.5
-  layoutCenter: {x: 0, y: 0, z: 0}
-  fsPosMid: {x: 0.5, y: 0.9}
-  fsPosRun: {x: 0.5, y: 0.75}
-  fsPosMid2: {x: 0.4, y: 1}
-  fsPosEnd: {x: 0.5, y: 0.95}
-  deck: {fileID: 0}
-  layout: {fileID: 0}
-  drawPile: []
-  layoutAnchor: {fileID: 0}
-  target: {fileID: 0}
-  tableau: []
-  discardPile: []
-  fsRun: {fileID: 0}
 --- !u!114 &827460516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,6 +569,16 @@ MonoBehaviour:
     hiddenBy: 
     type: slot
     stagger: {x: 0, y: 0}
+  targetCard:
+    x: -10
+    y: 0
+    faceUp: 0
+    layerName: Default
+    layerID: 0
+    id: 0
+    hiddenBy: 
+    type: slot
+    stagger: {x: 0, y: 0}
   sortingLayerNames:
   - Row0
   - Row1
@@ -605,6 +587,35 @@ MonoBehaviour:
   - Row4
   - Row5
   - Row6
-  - Row7
-  - Row8
+  - Draw
   - Discard
+  - TargetCard
+--- !u!114 &827460517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827460508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29391425e7cbaa54587cc442101fc74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckXML: {fileID: 4900000, guid: 1eec5840952b5ad48a2e35fa310f347e, type: 3}
+  PyramidLayoutXML: {fileID: 4900000, guid: 969a17cb96b38124aa11ce3575d7d04b, type: 3}
+  xOffset: 3
+  yOffset: -2.5
+  layoutCenter: {x: 0, y: 0, z: 0}
+  fsPosMid: {x: 0.5, y: 0.9}
+  fsPosRun: {x: 0.5, y: 0.75}
+  fsPosMid2: {x: 0.4, y: 1}
+  fsPosEnd: {x: 0.5, y: 0.95}
+  deck: {fileID: 0}
+  pLayout: {fileID: 0}
+  drawPile: []
+  layoutAnchor: {fileID: 0}
+  target: {fileID: 0}
+  tableau: []
+  discardPile: []
+  targetPile: []

@@ -46,7 +46,8 @@ public class ScoreManager : MonoBehaviour
 
         if (S == null) {                                        // c
 
-            S = this; // Set the private singleton 
+            S = this; // Set the private singleton
+
 
         } else {
 

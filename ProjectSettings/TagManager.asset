@@ -15,13 +15,13 @@ TagManager:
   - Row1
   - Row2
   - Row3
+  - Row4
+  - Row5
+  - Row6
+  - Row7
   - Discard
   - Draw
-  - 
-  - 
-  - 
-  - 
-  - 
+  - TargetCard
   - 
   - 
   - 
@@ -53,9 +53,24 @@ TagManager:
   - name: Row3
     uniqueID: 2320851059
     locked: 0
+  - name: Row4
+    uniqueID: 1995036335
+    locked: 0
+  - name: Row5
+    uniqueID: 412230119
+    locked: 0
+  - name: Row6
+    uniqueID: 2410019237
+    locked: 0
+  - name: Row7
+    uniqueID: 1593903849
+    locked: 0
   - name: Discard
     uniqueID: 3294931781
     locked: 0
   - name: Draw
     uniqueID: 2893239469
+    locked: 0
+  - name: TargetCard
+    uniqueID: 1464126347
     locked: 0

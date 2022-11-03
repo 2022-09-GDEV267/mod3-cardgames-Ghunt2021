@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -49,9 +49,7 @@ public class Layout : MonoBehaviour
 
     // This holds all of the possible names for the layers set by layerID
 
-    public string[] sortingLayerNames = new string[] { "Row0", "Row1",
-
-                                "Row2", "Row3", "Row4", "Row5", "Row6", "Row7", "Discard", "Draw" };
+    public string[] sortingLayerNames = new string[] { "Row0", "Row1", "Row2", "Row3", "Row4", "Row5", "Row6", "Discard", "Draw" };
 
     public void ReadLayout(string xmlText)
     {
@@ -90,9 +88,9 @@ public class Layout : MonoBehaviour
             if (slotsX[i].HasAtt("type"))
             {
 
-                // If this <slot> has a type attribute parse it
+            // If this <slot> has a type attribute parse it
 
-                tSD.type = slotsX[i].att("type");
+            tSD.type = slotsX[i].att("type");
 
             }
             else

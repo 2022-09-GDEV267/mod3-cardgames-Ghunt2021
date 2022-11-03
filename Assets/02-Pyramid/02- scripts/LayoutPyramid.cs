@@ -47,11 +47,13 @@ public class LayoutPyramid : MonoBehaviour
 
     public PyramidSlotDef discardPile;
 
+    public PyramidSlotDef targetCard;
+
     // This holds all of the possible names for the layers set by layerID
 
     public string[] sortingLayerNames = new string[] { "Row0", "Row1",
 
-                                "Row2", "Row3", "Discard", "Draw" };
+                                "Row2", "Row3", "Row4", "Row5", "Row6", "Discard", "Draw", "TargetCard" };
 
     public void ReadLayout(string xmlText)
     {
@@ -160,6 +162,12 @@ public class LayoutPyramid : MonoBehaviour
                 case "discardpile":
 
                     discardPile = tSD;
+
+                    break;
+
+                case "TargetCard":
+
+                    targetCard = tSD;
 
                     break;
 
