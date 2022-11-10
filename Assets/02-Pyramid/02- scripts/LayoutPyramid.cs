@@ -49,6 +49,7 @@ public class LayoutPyramid : MonoBehaviour
 
     public PyramidSlotDef targetCard;
 
+
     // This holds all of the possible names for the layers set by layerID
 
     public string[] sortingLayerNames = new string[] { "Row0", "Row1",

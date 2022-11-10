@@ -254,10 +254,6 @@ public class Pyramid : MonoBehaviour
 
         cd.transform.parent = layoutAnchor; // Update its transform parent
 
-
-
-
-
         // Position this card on the discardPile
 
         cd.transform.localPosition = new Vector3(
@@ -267,6 +263,7 @@ public class Pyramid : MonoBehaviour
             pLayout.multiplier.y * pLayout.discardPile.y,
 
             -pLayout.discardPile.layerID + 0.5f);
+
 
         cd.faceUp = true;
 
@@ -304,10 +301,7 @@ public class Pyramid : MonoBehaviour
 
             pLayout.multiplier.y * pLayout.targetCard.y,
 
-            -pLayout.targetCard.layerID);
-
-
-
+            -pLayout.targetCard.layerID + 0.5f);
 
 
         cd.faceUp = true; // Make it face-up
@@ -349,7 +343,10 @@ public class Pyramid : MonoBehaviour
     //    cd.SetSortOrder(-100 + targetPile.Count);
     //}
 
-
+//    void SelectedCard
+//    {
+//
+//    }
 
     // Arranges all the cards of the drawPile to show how many are left
 
@@ -399,84 +396,132 @@ public class Pyramid : MonoBehaviour
 
     }
 
+    //public void CardClicked(CardPyramid cd)
+    //{
+
+    //    // The reaction is determined by the state of the clicked card
+
+    //    switch (cd.state)
+    //    {
+
+    //        case eCardState.target:
+
+
+
+    //            break;
+
+    //        case eCardState.selected:
+
+    //            //if()
+    //            //{
+    //            //
+    //            //}
+    //            //if()
+    //            //{
+    //            //
+    //            //}
+
+
+    //            break;
+
+
+    //        case eCardState.drawpile:
+
+    //            // Clicking any card in the drawPile will draw the next card
+
+    //            MoveToDiscard(target); // Moves the target to the discardPile
+
+    //            MoveToTarget(Draw());  // Moves the next drawn card to the target
+
+    //            UpdateDrawPile();     // Restacks the drawPile
+
+    //            break;
+
+
+
+
+
+    //        case eCardState.tableau:
+
+    //            // Clicking a card in the tableau will check if it's a valid play
+    //            bool validMatch = true;
+
+    //            if (!cd.faceUp)
+    //            {
+
+    //                // If the card is face-down, it's not valid
+
+    //                validMatch = false;
+
+    //            }
+
+    //            if (!RankAddsUpTo13(cd, target))
+    //            {
+
+    //                // If it's not an adjacent rank, it's not valid
+
+    //                validMatch = false;
+
+    //            }
+
+    //            if (!validMatch) return; // return if not valid
+
+
+
+    //            // If we got here, then: Yay! It's a valid card.
+
+    //            tableau.Remove(cd); // Remove it from the tableau List
+
+    //            MoveToTarget(cd);  // Make it the target card
+
+    //            // SelectedCard();
+
+    //            SetTableauFaces();  // Update tableau card face-ups
+
+                
+
+    //            break;
+
+    //    }
+
+    //    CheckForGameOver();
+
+    //}
+
     public void CardClicked(CardPyramid cd)
     {
-
-        // The reaction is determined by the state of the clicked card
-
-        switch (cd.state)
+        bool validMatch = false;
+        if(cd.faceUp)
         {
 
-            case eCardState.target:
-
-                // Clicking the target card does nothing
-
-                break;
-
-
-
-            case eCardState.drawpile:
-
-                // Clicking any card in the drawPile will draw the next card
-
-                MoveToTarget(target); // Moves the target to the discardPile
-
-                MoveToTarget(Draw());  // Moves the next drawn card to the target
-
-                UpdateDrawPile();     // Restacks the drawPile
-
-                break;
-
-
-
-
-
-            case eCardState.tableau:
-
-                // Clicking a card in the tableau will check if it's a valid play
-                bool validMatch = true;
-
-                if (!cd.faceUp)
-                {
-
-                    // If the card is face-down, it's not valid
-
-                    validMatch = false;
-
-                }
-
-                if (!RankAddsUpTo13(cd, target))
-                {
-
-                    // If it's not an adjacent rank, it's not valid
-
-                    validMatch = false;
-
-                }
-
-                if (!validMatch) return; // return if not valid
-
-
-
-                // If we got here, then: Yay! It's a valid card.
+            if (RankAddsUpTo13(cd, target))
+            {
+                validMatch = true;
 
                 tableau.Remove(cd); // Remove it from the tableau List
 
                 MoveToTarget(cd);  // Make it the target card
 
+                // SelectedCard();
+
                 SetTableauFaces();  // Update tableau card face-ups
 
-                
-
-                break;
-
+            }
         }
 
-        CheckForGameOver();
+        if(eCardState.drawpile)
+        {
+            MoveToDiscard(target); // Moves the target to the discardPile
+
+            MoveToTarget(Draw());  // Moves the next drawn card to the target
+
+            UpdateDrawPile();     // Restacks the drawPile
+        }
 
     }
 
-    // Test whether the game is over
+
+        // Test whether the game is over
 
     void CheckForGameOver()
     {

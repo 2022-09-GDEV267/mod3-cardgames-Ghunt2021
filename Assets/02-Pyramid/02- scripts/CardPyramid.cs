@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 // An enum defines a variable type with a few prenamed values        // a
 
-public enum ePyrCardState
+public enum CardState
 {
 
     drawpile,
@@ -11,6 +11,8 @@ public enum ePyrCardState
     tableau,
 
     target,
+
+    selected,
 
     discard
 
